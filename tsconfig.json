@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.js", "src/app/Providers.jsx", "src/app/layout.jsx", "src/app/about/page.jsx", "src/app/error.jsx", "src/app/page.jsx", "src/components/Card.jsx", "src/components/DarkModeSwitch.jsx", "src/components/Header.jsx", "src/components/MenuItem.jsx", "src/components/Navbar.jsx", "src/components/NavbarItem.jsx", "src/components/Results.jsx", "src/components/SearchBox.jsx", "src/movie/[id]/page.jsx"],
   "exclude": ["node_modules"]
 }

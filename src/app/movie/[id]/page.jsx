@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 async function getMovie(movieId) {
   const res = await fetch(
@@ -9,7 +10,9 @@ async function getMovie(movieId) {
 
 export default async function MoviePage({ params }) {
   const movieId = params.id;
+  console.log("MOVIE ID", movieId)
   const movie = await getMovie(movieId);
+  console.log(movie)
   return (
     <div className="w-full">
       <div className="p-4 md:pt-8 flex flex-col md:flex-row items-center content-center max-w-6xl mx-auto md:space-x-6">
@@ -46,6 +49,7 @@ export default async function MoviePage({ params }) {
           </p>
         </div>
       </div>
+      <Link href="/" className="flex justify-center h-5 my-5">back</Link>
     </div>
   );
 }
